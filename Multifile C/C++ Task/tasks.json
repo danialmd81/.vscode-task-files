@@ -4,13 +4,13 @@
         {
             "type": "cppbuild",
             "label": "C/C++: g++.exe build active file",
-            "command": "C:/MinGW/bin/g++.exe",
+            "command": "g++", //or change it to gcc for c file and if your terminal does not recognize this change it to your compiler absolute path
             "args": [
                 "-fdiagnostics-color=always",
                 "-g",
-                "-std=c++23",
+                // "-std=c++23", //optional
                 "-Wall",
-                "${fileDirname}\\**.cpp",
+                "${fileDirname}\\**.c*", //This pattern specifies that all files with extensions starting with .c (like .c, .cpp, .cxx, etc.) in the current directory should be included in the compilation process.
                 "-o",
                 "${fileDirname}\\${fileBasenameNoExtension}.exe"
             ],
@@ -24,7 +24,7 @@
                 "kind": "build",
                 "isDefault": true
             },
-            "detail": "compiler: C:/MinGW/bin/g++.exe"
+            "detail": "compiler: g++"
         }
     ]
 }
