@@ -2,29 +2,42 @@
     "version": "2.0.0",
     "tasks": [
         {
-            "type": "cppbuild",
-            "label": "C/C++: g++.exe build active file",
-            "command": "g++", //or change it to gcc for c file and if your terminal does not recognize this change it to your compiler absolute path
+            "label": "build C project",
+            "type": "shell",
+            "command": "gcc", //if your terminal does not recognize this change it to your compiler absolute path
             "args": [
-                "-fdiagnostics-color=always",
                 "-g",
-                // "-std=c++23", //optional
-                "-Wall",
-                "${fileDirname}\\**.c*", //This pattern specifies that all files with extensions starting with .c (like .c, .cpp, .cxx, etc.) in the current directory should be included in the compilation process.
+                "${workspaceFolder}/src/*.c",
                 "-o",
-                "${fileDirname}\\${fileBasenameNoExtension}.exe"
-            ],
-            "options": {
-                "cwd": "C:/MinGW/bin"
-            },
-            "problemMatcher": [
-                "$gcc"
+                "${workspaceFolder}/out/projectExecutable"
             ],
             "group": {
                 "kind": "build",
                 "isDefault": true
             },
-            "detail": "compiler: g++"
+            "problemMatcher": [
+                "$gcc"
+            ],
+            "detail": "Generated task to build all C source files."
+        },
+        {
+            "label": "build C++ project",
+            "type": "shell",
+            "command": "g++", //if your terminal does not recognize this change it to your compiler absolute path
+            "args": [
+                "-g",
+                "${workspaceFolder}/src/*.cpp",
+                "-o",
+                "${workspaceFolder}/out/projectExecutable"
+            ],
+            "group": {
+                "kind": "build",
+                "isDefault": true
+            },
+            "problemMatcher": [
+                "$gcc"
+            ],
+            "detail": "Generated task to build all C++ source files."
         }
     ]
 }

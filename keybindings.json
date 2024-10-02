@@ -37,5 +37,54 @@
     "key": "ctrl+enter",
     "command": "-mysql.runSQL",
     "when": "editorLangId == 'cql' || editorLangId == 'dbclient-js' || editorLangId == 'postgres' || editorLangId == 'sql'"
+  },
+  {
+    "key": "alt+`",
+    "command": "openInIntegratedTerminal"
+  },
+  {
+    "key": "alt+`",
+    "command": "-workbench.action.editorDictation.start",
+    "when": "hasSpeechProvider && !editorReadonly && !speechToTextInProgress"
+  },
+  {
+    "key": "ctrl+f9",
+    "command": "workbench.action.tasks.build",
+    "when": "taskCommandsRegistered"
+  },
+  {
+    "key": "ctrl+shift+b",
+    "command": "-workbench.action.tasks.build",
+    "when": "taskCommandsRegistered"
+  },
+  {
+    "key": "f11 f12",
+    "command": "r.runAllChunks"
+  },
+  {
+    "key": "ctrl+f12",
+    "command": "r.knitRmdToHtml"
+  },
+  {
+    "key": "ctrl+1",
+    "command": "r.createRTerm"
+  },
+  {
+    "key": "ctrl+enter",
+    "command": "r.runCurrentChunk",
+    "when": "editorTextFocus && editorLangId == 'r' || editorTextFocus && editorLangId == 'rmd'"
+  },
+  {
+    "key": "ctrl+shift+enter",
+    "command": "-r.runCurrentChunk",
+    "when": "editorTextFocus && editorLangId == 'r' || editorTextFocus && editorLangId == 'rmd'"
+  },
+  {
+    "key": "ctrl+f5",
+    "command": "C_Cpp.BuildAndDebugFile"
+  },
+  {
+    "key": "f5",
+    "command": "C_Cpp.BuildAndRunFile"
   }
 ]
