@@ -12,11 +12,11 @@ This README provides instructions on setting up VS Code tasks and launch configu
 
 ### Multifile C Task
 
-To set up tasks and launch configurations for a multifile C project, copy the `tasks.json` and `launch.json` files from the `Multifile C Task` directory to your project's `.vscode` directory.
+To set up tasks and launch configurations for a multifile C project, copy the `tasks.json` and `launch.json` files from the `Multifile C Task` directory to your project's `.vscode` directory. The multifile tasks will compile all `.c` files in the directory.
 
 ### Multifile C++ Task
 
-To set up tasks and launch configurations for a multifile C++ project, copy the `tasks.json` and `launch.json` files from the `Multifile C++ Task` directory to your project's `.vscode` directory.
+To set up tasks and launch configurations for a multifile C++ project, copy the `tasks.json` and `launch.json` files from the `Multifile C++ Task` directory to your project's `.vscode` directory. The multifile tasks will compile all `.cpp` files in the directory.
 
 ### Singlefile C Task
 
