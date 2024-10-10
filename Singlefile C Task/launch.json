@@ -13,6 +13,11 @@
       "externalConsole": false,
       "MIMode": "gdb",
       "miDebuggerPath": "C:\\MinGW\\bin\\gdb.exe",
+      "logging": {
+        "trace": true,
+        "traceResponse": true,
+        "engineLogging": true
+      },
       "setupCommands": [
         {
           "description": "Enable pretty-printing for gdb",
@@ -25,7 +30,7 @@
           "ignoreFailures": true
         }
       ],
-      "preLaunchTask": "c task"
+      "preLaunchTask": "single file c task"
     }
   ]
 }

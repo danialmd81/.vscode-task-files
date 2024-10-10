@@ -3,8 +3,8 @@
     "tasks": [
         {
             "type": "cbuild",
-            "label": "c task",
-            "command": "C:/MinGW/bin/gcc.exe",
+            "label": "single file c task",
+            "command": "gcc",
             "args": [
                 "-fdiagnostics-color=always",
                 "-g",
