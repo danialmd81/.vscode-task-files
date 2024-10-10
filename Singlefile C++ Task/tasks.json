@@ -3,8 +3,8 @@
     "tasks": [
         {
             "type": "cppbuild",
-            "label": "cpp task",
-            "command": "C:/MinGW/bin/g++.exe",
+            "label": "single file cpp task",
+            "command": "g++",
             "args": [
                 "-fdiagnostics-color=always",
                 "-g",
