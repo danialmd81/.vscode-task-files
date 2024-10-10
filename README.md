@@ -149,4 +149,10 @@ Create a `launch.json` file in the `.vscode` directory to define the debug confi
 }
 ```
 
+## Usage
+
+1. Open the project in VS Code.
+2. Press `F5` to build the project.
+3. Press `Ctrl+F5` to start debugging.
+
 This setup will compile all C/C++ source files in the `src` directory and create an executable in the directory.
