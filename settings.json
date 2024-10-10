@@ -221,5 +221,5 @@
   "database-client.queryWithSchema": true,
   "gitlens.advanced.messages": {
     "suppressCreatePullRequestPrompt": true
-  },
+  }
 }
